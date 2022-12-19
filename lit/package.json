@@ -1,0 +1,29 @@
+{
+    "name": "@custom-glue-ui-widget-examples/lit",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "license": "MIT",
+    "author": {
+        "name": "MakeProAudio GmbH"
+    },
+    "dependencies": {
+        "lit": "^2.5.0"
+    },
+    "devDependencies": {
+        "esbuild": "^0.16.9"
+    },
+    "scripts": {
+        "build": "esbuild --bundle --minify --target=es2020 --format=esm --outdir=dist src/index.ts",
+        "prepare": "npm run build"
+    },
+    "glue": {
+        "apiVersion": 1,
+        "type": "ui-widget",
+        "tagName": "guw-my-lit-widget",
+        "displayName": "My Lit Widget",
+        "icon": "ban-bug"
+    },
+    "files": [
+        "dist"
+    ]
+}
