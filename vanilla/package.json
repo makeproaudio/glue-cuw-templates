@@ -1,0 +1,19 @@
+{
+    "name": "@custom-glue-ui-widget-examples/vanilla",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "author": {
+        "name": "MakeProAudio GmbH"
+    },
+    "glue": {
+        "apiVersion": 1,
+        "type": "ui-widget",
+        "tagName": "guw-my-vanilla-widget",
+        "displayName": "My vanilla js Widget",
+        "icon": "ban-bug"
+    },
+    "files": [
+        "index.js"
+    ]
+}
